@@ -112,7 +112,6 @@ export EDITOR="$VISUAL"
 export BROWSER="explorer.exe"
 
 export PATH="$PATH:$HOME/.local/bin"
-export DOCKER_HOST=tcp://127.0.0.1:2375
 
 export GEM_HOME="$HOME/gems"
 export PATH="$HOME/gems/bin:$PATH"
@@ -124,13 +123,9 @@ export COMPOSE_CONVERT_WINDOWS_PATHS=1
 # export DISPLAY=:0
 
 # https://www.turek.dev/post/fix-wsl-file-permissions/
-if [[ "$(umask)" = "0000" ]]; then
-  umask 0022
-fi
-
-if [[ "$(umask)" = "000" ]]; then
-  umask 0022
-fi
+# if [[ "$(umask)" = "0000" ]]; then
+#   umask 0022
+# fi
 
 echo
 echo
